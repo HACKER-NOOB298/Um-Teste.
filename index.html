@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Completo de Exorcismo</title>
+    <meta name="description" content="Guia Completo de Exorcismo - Recurso abrangente sobre rituais, orações e proteção espiritual da Igreja Católica">
+    <meta name="keywords" content="exorcismo, orações, rituais, proteção espiritual, Igreja Católica, guia completo">
+    <meta name="author" content="Guia Completo de Exorcismo">
+    <meta name="theme-color" content="#c41e3a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="Guia Completo de Exorcismo">
+    <meta property="og:description" content="Recurso abrangente sobre rituais, orações e proteção espiritual">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exorcismguide.com">
+    <title>Guia Completo de Exorcismo - Rituais, Orações e Proteção Espiritual</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>✝️</text></svg>">
 </head>
 <body>
-    <!-- Navigation Header -->
+    <!-- ========================================
+         HEADER & NAVIGATION
+         ======================================== -->
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -17,81 +30,83 @@
                     <p class="subtitle">Guia Completo</p>
                 </div>
             </div>
-            <nav class="nav-menu">
-                <button class="nav-btn active" data-section="home">Início</button>
-                <button class="nav-btn" data-section="definicao">Definição</button>
-                <button class="nav-btn" data-section="rituais">Rituais</button>
-                <button class="nav-btn" data-section="oracoes">Orações</button>
-                <button class="nav-btn" data-section="historia">História</button>
-                <button class="nav-btn" data-section="protecao">Proteção</button>
-                <button class="nav-btn" data-section="faq">FAQ</button>
+            <nav class="nav-menu" role="navigation" aria-label="Navegação Principal">
+                <button class="nav-btn active" data-section="home" aria-label="Ir para Início">Início</button>
+                <button class="nav-btn" data-section="definicao" aria-label="Ir para Definição">Definição</button>
+                <button class="nav-btn" data-section="rituais" aria-label="Ir para Rituais">Rituais</button>
+                <button class="nav-btn" data-section="oracoes" aria-label="Ir para Orações">Orações</button>
+                <button class="nav-btn" data-section="historia" aria-label="Ir para História">História</button>
+                <button class="nav-btn" data-section="protecao" aria-label="Ir para Proteção">Proteção</button>
+                <button class="nav-btn" data-section="faq" aria-label="Ir para FAQ">FAQ</button>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
     <main class="main-content">
         
-        <!-- Home Section -->
-        <section id="home" class="section active">
+        <!-- HOME SECTION -->
+        <section id="home" class="section active" aria-labelledby="home-title">
             <div class="section-content">
                 <div class="welcome-banner">
-                    <h2>Bem-vindo ao Guia Completo de Exorcismo</h2>
+                    <h2 id="home-title">Bem-vindo ao Guia Completo de Exorcismo</h2>
                     <p>Um recurso abrangente para estudiosos e praticantes do exorcismo católico</p>
                 </div>
 
-                <div class="features-grid">
-                    <div class="feature-card" onclick="openSection('definicao')">
-                        <div class="feature-icon">📖</div>
+                <div class="features-grid" role="list">
+                    <div class="feature-card" role="listitem" onclick="openSection('definicao')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">📖</div>
                         <h3>Definições</h3>
                         <p>Compreenda o significado e os princípios do exorcismo</p>
                     </div>
-                    <div class="feature-card" onclick="openSection('rituais')">
-                        <div class="feature-icon">⛪</div>
+                    <div class="feature-card" role="listitem" onclick="openSection('rituais')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">⛪</div>
                         <h3>Rituais Oficiais</h3>
                         <p>Procedimentos tradicionais da Igreja Católica</p>
                     </div>
-                    <div class="feature-card" onclick="openSection('oracoes')">
-                        <div class="feature-icon">🙏</div>
+                    <div class="feature-card" role="listitem" onclick="openSection('oracoes')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">🙏</div>
                         <h3>Orações Sagradas</h3>
                         <p>Preces utilizadas em exorcismos e proteção</p>
                     </div>
-                    <div class="feature-card" onclick="openSection('protecao')">
-                        <div class="feature-icon">🛡️</div>
+                    <div class="feature-card" role="listitem" onclick="openSection('protecao')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">🛡️</div>
                         <h3>Proteção Espiritual</h3>
                         <p>Métodos de proteção e fortalecimento espiritual</p>
                     </div>
-                    <div class="feature-card" onclick="openSection('historia')">
-                        <div class="feature-icon">📚</div>
+                    <div class="feature-card" role="listitem" onclick="openSection('historia')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">📚</div>
                         <h3>Conhecimento Histórico</h3>
                         <p>Origem e evolução das práticas de exorcismo</p>
                     </div>
-                    <div class="feature-card" onclick="openSection('faq')">
-                        <div class="feature-icon">❓</div>
+                    <div class="feature-card" role="listitem" onclick="openSection('faq')" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true">❓</div>
                         <h3>Perguntas Frequentes</h3>
                         <p>Dúvidas comuns respondidas</p>
                     </div>
                 </div>
 
-                <div class="info-box">
+                <div class="info-box" role="note">
                     <h3>⚠️ Aviso Importante</h3>
                     <p>O exorcismo é uma prática religiosa da Igreja Católica. Este guia é apenas informativo e educacional. Para casos reais, sempre consulte um sacerdote ou bispo autorizado pela Igreja.</p>
                 </div>
 
-                <div class="stats-container">
-                    <div class="stat">
-                        <div class="stat-number">6</div>
+                <div class="stats-container" role="list">
+                    <div class="stat" role="listitem">
+                        <div class="stat-number">7</div>
                         <div class="stat-label">Seções Principais</div>
                     </div>
-                    <div class="stat">
+                    <div class="stat" role="listitem">
                         <div class="stat-number">20+</div>
                         <div class="stat-label">Orações e Rituais</div>
                     </div>
-                    <div class="stat">
+                    <div class="stat" role="listitem">
                         <div class="stat-number">2000+</div>
                         <div class="stat-label">Anos de Tradição</div>
                     </div>
-                    <div class="stat">
+                    <div class="stat" role="listitem">
                         <div class="stat-number">100%</div>
                         <div class="stat-label">Gratuito</div>
                     </div>
@@ -99,10 +114,10 @@
             </div>
         </section>
 
-        <!-- Definição Section -->
-        <section id="definicao" class="section">
+        <!-- DEFINIÇÃO SECTION -->
+        <section id="definicao" class="section" aria-labelledby="definicao-title">
             <div class="section-content">
-                <h2>O que é Exorcismo?</h2>
+                <h2 id="definicao-title">O que é Exorcismo?</h2>
                 
                 <div class="content-box">
                     <h3>Definição Oficial</h3>
@@ -132,53 +147,57 @@
 
                 <div class="comparison-box">
                     <h3>Possessão Demoníaca vs. Condições Médicas</h3>
-                    <table class="comparison-table">
-                        <tr>
-                            <th>Possessão Demoníaca</th>
-                            <th>Condições Médicas</th>
-                        </tr>
-                        <tr>
-                            <td>Aversão extrema a símbolos sagrados</td>
-                            <td>Relacionadas a condições neurológicas</td>
-                        </tr>
-                        <tr>
-                            <td>Conhecimento de fatos desconhecidos</td>
-                            <td>Memória ou cognição alterada</td>
-                        </tr>
-                        <tr>
-                            <td>Força sobrenatural</td>
-                            <td>Força aumentada por adrenalina</td>
-                        </tr>
-                        <tr>
-                            <td>Mudança completa de personalidade</td>
-                            <td>Mudanças comportamentais graduais</td>
-                        </tr>
+                    <table class="comparison-table" role="table" aria-label="Comparação entre Possessão Demoníaca e Condições Médicas">
+                        <thead>
+                            <tr>
+                                <th scope="col">Possessão Demoníaca</th>
+                                <th scope="col">Condições Médicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aversão extrema a símbolos sagrados</td>
+                                <td>Relacionadas a condições neurológicas</td>
+                            </tr>
+                            <tr>
+                                <td>Conhecimento de fatos desconhecidos</td>
+                                <td>Memória ou cognição alterada</td>
+                            </tr>
+                            <tr>
+                                <td>Força sobrenatural</td>
+                                <td>Força aumentada por adrenalina</td>
+                            </tr>
+                            <tr>
+                                <td>Mudança completa de personalidade</td>
+                                <td>Mudanças comportamentais graduais</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
         </section>
 
-        <!-- Rituais Section -->
-        <section id="rituais" class="section">
+        <!-- RITUAIS SECTION -->
+        <section id="rituais" class="section" aria-labelledby="rituais-title">
             <div class="section-content">
-                <h2>Rituais e Procedimentos Oficiais</h2>
+                <h2 id="rituais-title">Rituais e Procedimentos Oficiais</h2>
 
                 <div class="ritual-card">
                     <h3>1. Avaliação Inicial</h3>
-                    <div class="ritual-steps">
-                        <div class="step">
+                    <div class="ritual-steps" role="list">
+                        <div class="step" role="listitem">
                             <span class="step-number">1</span>
                             <p>Entrevista detalhada com a pessoa afetada e seus familiares</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">2</span>
                             <p>Consultoria com profissionais médicos e psicológicos</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">3</span>
                             <p>Revisão do histórico familiar e espiritual</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">4</span>
                             <p>Aprovação do bispo para proceder com exorcismo</p>
                         </div>
@@ -187,20 +206,20 @@
 
                 <div class="ritual-card">
                     <h3>2. Preparação para o Ritual</h3>
-                    <div class="ritual-steps">
-                        <div class="step">
+                    <div class="ritual-steps" role="list">
+                        <div class="step" role="listitem">
                             <span class="step-number">1</span>
                             <p>Oração e jejum pelos participantes (recomendado)</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">2</span>
                             <p>Confissão e comunhão para a pessoa afetada</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">3</span>
                             <p>Preparação da sala ou local do ritual com símbolos sagrados</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">4</span>
                             <p>Presença de assistentes de confiança do sacerdote</p>
                         </div>
@@ -209,24 +228,24 @@
 
                 <div class="ritual-card">
                     <h3>3. O Ritual Propriamente Dito</h3>
-                    <div class="ritual-steps">
-                        <div class="step">
+                    <div class="ritual-steps" role="list">
+                        <div class="step" role="listitem">
                             <span class="step-number">1</span>
                             <p>Invocação da Santíssima Trindade e intercessão de santos</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">2</span>
                             <p>Leitura de passagens da Sagrada Escritura</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">3</span>
                             <p>Imposição das mãos e orações de comando</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">4</span>
                             <p>Benzedura com água benta e aplicação de símbolos sagrados</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">5</span>
                             <p>Repetição conforme necessário até libertação espiritual</p>
                         </div>
@@ -235,110 +254,110 @@
 
                 <div class="ritual-card">
                     <h3>4. Pós-Ritual</h3>
-                    <div class="ritual-steps">
-                        <div class="step">
+                    <div class="ritual-steps" role="list">
+                        <div class="step" role="listitem">
                             <span class="step-number">1</span>
                             <p>Acompanhamento espiritual contínuo</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">2</span>
                             <p>Participação regular em sacramentos (Missa, confissão)</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">3</span>
                             <p>Monitoramento da saúde mental e espiritual</p>
                         </div>
-                        <div class="step">
+                        <div class="step" role="listitem">
                             <span class="step-number">4</span>
                             <p>Práticas de proteção espiritual regular</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="info-box">
+                <div class="info-box" role="note">
                     <h3>📋 Documentação Oficial</h3>
                     <p>O ritual oficial é baseado no Rituale Romanum, publicado pela Igreja Católica. Este documento contém todas as orações e procedimentos autorizados para exorcismos legítimos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Orações Section -->
-        <section id="oracoes" class="section">
+        <!-- ORAÇÕES SECTION -->
+        <section id="oracoes" class="section" aria-labelledby="oracoes-title">
             <div class="section-content">
-                <h2>Orações Sagradas</h2>
+                <h2 id="oracoes-title">Orações Sagradas</h2>
 
-                <div class="prayer-tabs">
-                    <button class="prayer-tab-btn active" onclick="filterPrayers('todas')">Todas</button>
-                    <button class="prayer-tab-btn" onclick="filterPrayers('protecao')">Proteção</button>
-                    <button class="prayer-tab-btn" onclick="filterPrayers('libertacao')">Libertação</button>
-                    <button class="prayer-tab-btn" onclick="filterPrayers('tradicional')">Tradicionais</button>
+                <div class="prayer-tabs" role="tablist" aria-label="Filtro de Orações">
+                    <button class="prayer-tab-btn active" onclick="filterPrayers('todas')" role="tab" aria-selected="true">Todas</button>
+                    <button class="prayer-tab-btn" onclick="filterPrayers('protecao')" role="tab" aria-selected="false">Proteção</button>
+                    <button class="prayer-tab-btn" onclick="filterPrayers('libertacao')" role="tab" aria-selected="false">Libertação</button>
+                    <button class="prayer-tab-btn" onclick="filterPrayers('tradicional')" role="tab" aria-selected="false">Tradicionais</button>
                 </div>
 
-                <div class="prayer-card" data-category="tradicional">
+                <div class="prayer-card" data-category="tradicional" role="article">
                     <h3>Oração do Pai Nosso</h3>
                     <div class="prayer-text">
                         <p>Pai nosso que estais nos céus, santificado seja o vosso nome. Venha a nós o vosso reino. Seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas dívidas, assim como perdoamos aos nossos devedores. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Oração do Pai Nosso">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="protecao">
+                <div class="prayer-card" data-category="protecao" role="article">
                     <h3>Oração de São Miguel Arcanjo</h3>
                     <div class="prayer-text">
                         <p>São Miguel Arcanjo, defendei-nos na luta. Sedes o protetor nosso contra a perversidade e as ciladas do demônio. Ordene-lhe Deus, suplicamos humildemente; e vós, Príncipe da milícia celeste, com a força que Deus vos confiou, precipitai no inferno a Satanás e aos outros espíritos maus que andam pelo mundo para perdição das almas. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Oração de São Miguel Arcanjo">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="protecao">
+                <div class="prayer-card" data-category="protecao" role="article">
                     <h3>Oração de Proteção Espiritual</h3>
                     <div class="prayer-text">
                         <p>Senhor Jesus Cristo, Filho de Deus vivo, que derramaste teu sangue precioso para a redenção dos nossos pecados, te suplico que me protejas contra as forças malignas. Revisti-me com a armadura de Deus: a courassa da justiça, o escudo da fé e o capacete da salvação. Que o sangue precioso de Cristo crie uma barreira de proteção ao meu redor. Que os anjos de Deus me guardem e protejam em todos os momentos. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Oração de Proteção Espiritual">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="tradicional">
+                <div class="prayer-card" data-category="tradicional" role="article">
                     <h3>Ave Maria</h3>
                     <div class="prayer-text">
                         <p>Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Ave Maria">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="libertacao">
+                <div class="prayer-card" data-category="libertacao" role="article">
                     <h3>Oração de Libertação</h3>
                     <div class="prayer-text">
                         <p>Em nome do Pai, e do Filho, e do Espírito Santo, ordeno: Espírito imundo, em virtude da autoridade que me foi confiada através de Cristo, sai desta criatura de Deus. Que a luz de Cristo te expulse para as trevas. Que a paz de Deus substitua tua presença maligna. Que a graça divina restaure este lugar sagrado. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Oração de Libertação">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="tradicional">
+                <div class="prayer-card" data-category="tradicional" role="article">
                     <h3>Salmo 23 - O Senhor é Meu Pastor</h3>
                     <div class="prayer-text">
                         <p>O Senhor é meu pastor, nada me faltará. Em prados verdejantes ele me faz repousar, leva-me para junto das águas tranquilas. Restaura-me o vigor, guia-me pelas veredas da justiça, por amor do seu nome. Mesmo quando eu andar por um vale de sombras e morte, não temerei mal algum, pois vós estais comigo; a vossa vara e o vosso cajado me consolam. Preparais uma mesa perante mim na presença dos meus inimigos; ungis a minha cabeça com óleo, meu cálice transborda. A vossa bondade e misericórdia hão de acompanhar-me todos os dias da minha vida, e habitarei na casa do Senhor para sempre. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Salmo 23">📋 Copiar</button>
                 </div>
 
-                <div class="prayer-card" data-category="protecao">
+                <div class="prayer-card" data-category="protecao" role="article">
                     <h3>Oração da Armadura de Deus</h3>
                     <div class="prayer-text">
                         <p>Revestei-vos de toda a armadura de Deus, para que possais fazer frente às ciladas do diabo. Porque a nossa luta não é contra a carne e o sangue, mas contra os Principados, contra as Potestades, contra os Dominadores deste mundo tenebroso, contra os Espíritos do mal distribuídos nos ares. Tomai, pois, a armadura de Deus, para que possais resistir no dia mau e, depois de tudo, ficardes de pé. Amém.</p>
                     </div>
-                    <button class="copy-btn" onclick="copyPrayer(this)">📋 Copiar</button>
+                    <button class="copy-btn" onclick="copyPrayer(this)" aria-label="Copiar Oração da Armadura de Deus">📋 Copiar</button>
                 </div>
             </div>
         </section>
 
-        <!-- História Section -->
-        <section id="historia" class="section">
+        <!-- HISTÓRIA SECTION -->
+        <section id="historia" class="section" aria-labelledby="historia-title">
             <div class="section-content">
-                <h2>História e Evolução do Exorcismo</h2>
+                <h2 id="historia-title">História e Evolução do Exorcismo</h2>
 
-                <div class="timeline">
-                    <div class="timeline-item">
+                <div class="timeline" role="list">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">Séc. I d.C.</span>
                         </div>
@@ -348,7 +367,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">Séc. II-V d.C.</span>
                         </div>
@@ -358,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">Séc. VI-XII</span>
                         </div>
@@ -368,7 +387,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">1614 d.C.</span>
                         </div>
@@ -378,7 +397,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">Séc. XVII-XVIII</span>
                         </div>
@@ -388,7 +407,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">1983 d.C.</span>
                         </div>
@@ -398,7 +417,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">1985 d.C.</span>
                         </div>
@@ -408,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" role="listitem">
                         <div class="timeline-marker">
                             <span class="timeline-year">Contemporâneo</span>
                         </div>
@@ -421,86 +440,86 @@
             </div>
         </section>
 
-        <!-- Proteção Section -->
-        <section id="protecao" class="section">
+        <!-- PROTEÇÃO SECTION -->
+        <section id="protecao" class="section" aria-labelledby="protecao-title">
             <div class="section-content">
-                <h2>Proteção Espiritual</h2>
+                <h2 id="protecao-title">Proteção Espiritual</h2>
 
-                <div class="protection-grid">
-                    <div class="protection-card">
+                <div class="protection-grid" role="list">
+                    <div class="protection-card" role="listitem">
                         <h3>🙏 Oração Diária</h3>
                         <p>Reserve tempo todas as manhãs para oração, entregando seu dia a Deus e solicitando proteção divina contra influências malignas.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Prática Recomendada:</strong> Dedique de 10 a 15 minutos pela manhã para oração sincera. Peça proteção, sabedoria e força para o dia.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>✝️ Crucifixo</h3>
                         <p>Use ou tenha um crucifixo próximo. Este símbolo representa a vitória de Cristo sobre o mal e oferece proteção espiritual.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Significado:</strong> O crucifixo é um símbolo poderoso da redenção. Sua presença é uma afirmação de fé cristã e proteção divina.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>💧 Água Benta</h3>
                         <p>Água benta abençoada pela Igreja oferece proteção espiritual. Use-a na testa, em ambientes ou como parte de rituais de proteção.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Como Usar:</strong> Você pode obter água benta na Igreja. Aspergir em ambientes ou fazer o sinal da cruz na testa com água benta oferece proteção espiritual.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>📿 Terço</h3>
                         <p>Rezar o terço é uma prática poderosa de proteção. Dedique tempo regular para esta devoção mariana.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Prática:</strong> O terço consiste em meditação sobre mistérios da fé enquanto se reza Ave Marias e Pai Nossos. Oferece forte proteção espiritual.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>🕯️ Velas Sagradas</h3>
                         <p>Velas acesas durante oração iluminam o caminho espiritual e representam a presença da luz divina.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Uso:</strong> Acenda velas durante orações, especialmente velas brancas ou que contenham símbolos santos. Representam a luz de Cristo expulsando as trevas.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>🌿 Ramos Bentos</h3>
                         <p>Ramos de oliveira ou palmeira bento pelo Domingo de Ramos oferecem proteção tradicional quando mantidos em casa.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Tradição:</strong> O Domingo de Ramos comemora a entrada triunfal de Jesus em Jerusalém. Os ramos bentos neste dia possuem poder protetor especial.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>⛪ Sacramentos</h3>
                         <p>Participação regular em Missa e recebimento de sacramentos (confissão, comunhão) fortalece proteção espiritual.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Importância:</strong> Os sacramentos são meios de graça divina. A confissão regular e comunhão semanal oferecem proteção espiritual contínua.</p>
                         </div>
                     </div>
 
-                    <div class="protection-card">
+                    <div class="protection-card" role="listitem">
                         <h3>📖 Escritura Sagrada</h3>
                         <p>Leitura regular da Bíblia fortalece a fé e oferece discernimento contra influências malignas.</p>
-                        <button class="expand-btn">Saber Mais</button>
+                        <button class="expand-btn" onclick="toggleExpandableContent(this)" aria-expanded="false">Saber Mais</button>
                         <div class="expandable-content" style="display: none;">
                             <p><strong>Prática:</strong> Dedique tempo diário para ler a Bíblia. Salmos, Evangelhos e Cartas dos Apóstolos são particularmente poderosos para proteção espiritual.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="info-box">
+                <div class="info-box" role="note">
                     <h3>💡 Dicas Práticas de Proteção</h3>
                     <ul>
                         <li>Mantenha um ambiente limpo e sagrado em sua casa</li>
@@ -515,88 +534,88 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="section">
+        <!-- FAQ SECTION -->
+        <section id="faq" class="section" aria-labelledby="faq-title">
             <div class="section-content">
-                <h2>Perguntas Frequentes (FAQ)</h2>
+                <h2 id="faq-title">Perguntas Frequentes (FAQ)</h2>
 
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                <div class="faq-container" role="region" aria-label="Perguntas e Respostas Frequentes">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Como sei se alguém está possuído?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Os sinais podem incluir aversão extrema a símbolos sagrados, conhecimento de fatos desconhecidos, força anormalmente aumentada, e mudança completa de personalidade. No entanto, muitos desses sintomas podem ter explicações médicas ou psicológicas. É essencial consultar profissionais de saúde primeiro.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Qualquer pessoa pode fazer um exorcismo?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Não. Apenas sacerdotes católicos autorizados pelo bispo podem realizar exorcismos oficiais. A Igreja estabelece critérios rigorosos e treinamento específico para quem pode exercer essa função.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ O exorcismo funciona sempre?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>A eficácia do exorcismo depende de vários fatores, incluindo a fé, a preparação espiritual e a cooperação da pessoa afetada. Alguns casos podem exigir múltiplos exorcismos ou acompanhamento espiritual prolongado.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Existe exorcismo protestante?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Embora a prática formal de exorcismo seja mais associada à Igreja Católica, algumas igrejas protestantes reconhecem a possibilidade de possessão demoníaca e realizam práticas de deliverance (libertação), embora com procedimentos diferentes.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ O que fazer se acho que estou possuído?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Procure um médico ou psicólogo primeiro para descartar condições médicas. Se após isso suspeitar que é um caso espiritual, procure seu pároco ou bispo. Eles avaliarão se é necessário um exorcismo e como proceder.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Orações de proteção funcionam?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Segundo a tradição cristã, as orações sinceras oferecem proteção espiritual. A eficácia depende da fé, intenção e perseverança na prática espiritual. Muitos fiéis relatam experiências positivas.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Qual é a diferença entre possessão e opressão?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Possessão é quando uma entidade maligna controla o corpo e mente da pessoa. Opressão é quando há influência negativa sem controle total. Ambas requerem atenção espiritual, mas os tratamentos podem variar.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-item" role="presentation">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
                             <span>❓ Como posso aprender mais sobre exorcismo?</span>
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </div>
-                        <div class="faq-answer" style="display: none;">
+                        <div class="faq-answer" style="display: none;" role="region">
                             <p>Este guia oferece informações básicas. Para aprender mais, consulte livros sobre teologia católica, converse com padres especializados, ou pesquise documentos oficiais da Igreja Católica sobre o tema.</p>
                         </div>
                     </div>
@@ -606,8 +625,10 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer" role="contentinfo">
         <div class="footer-content">
             <p>&copy; 2026 Guia Completo de Exorcismo. Todos os direitos reservados.</p>
             <p style="margin-top: 10px; font-size: 0.9em;">Este guia é apenas informativo e educacional. Para práticas reais, sempre consulte um sacerdote autorizado pela Igreja Católica.</p>
@@ -616,6 +637,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
-</html>
+                    </html>
